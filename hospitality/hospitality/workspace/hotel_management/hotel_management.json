@@ -1,0 +1,194 @@
+{
+ "app": "erpnext",
+ "charts": [],
+ "content": "[{\"id\":\"8OjinhDmfs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Room Reservation\",\"col\":6}},{\"id\":\"WJwHi0rdb9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Restaurant Reservation\",\"col\":6}},{\"id\":\"VgFYn7KoCK\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ExSPCVKhok\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Hotel Rooms\",\"col\":4}},{\"id\":\"owFardIvN4\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Hotel Room Package\",\"col\":4}},{\"id\":\"QJuwwZ4M22\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Restaurants\",\"col\":4}},{\"id\":\"zYEWulH8MR\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uj5wneBSZN\",\"type\":\"card\",\"data\":{\"card_name\":\"Hotel shortcuts\",\"col\":6}},{\"id\":\"rXDR_fLKyr\",\"type\":\"card\",\"data\":{\"card_name\":\"Restaurant shortcuts\",\"col\":6}}]",
+ "creation": "2025-02-26 21:05:01.018846",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "dialpad",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Hotel Management",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel shortcuts",
+   "link_count": 6,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room",
+   "link_count": 0,
+   "link_to": "Hotel Room",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room Package",
+   "link_count": 0,
+   "link_to": "Hotel Room Package",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room Pricing",
+   "link_count": 0,
+   "link_to": "Hotel Room Pricing",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room Reservation",
+   "link_count": 0,
+   "link_to": "Hotel Room Reservation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room Type",
+   "link_count": 0,
+   "link_to": "Hotel Room Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Settings",
+   "link_count": 0,
+   "link_to": "Hotel Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant shortcuts",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant",
+   "link_count": 0,
+   "link_to": "Restaurant",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Menu",
+   "link_count": 0,
+   "link_to": "Restaurant Menu",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Order Entry",
+   "link_count": 0,
+   "link_to": "Restaurant Order Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Reservation",
+   "link_count": 0,
+   "link_to": "Restaurant Reservation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Restaurant Table",
+   "link_count": 0,
+   "link_to": "Restaurant Table",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-02-26 22:17:13.826478",
+ "modified_by": "Administrator",
+ "module": "Hospitality",
+ "name": "Hotel Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Hotel Room",
+   "label": "Hotel Rooms",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Hotel Room Package",
+   "label": "Hotel Room Package",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Restaurant",
+   "label": "Restaurants",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Restaurant Reservation",
+   "link_to": "Restaurant Reservation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hotel Room Reservation",
+   "link_to": "Hotel Room Reservation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Hotel Management",
+ "type": "Workspace"
+}

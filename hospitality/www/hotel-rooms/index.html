@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %} {% block page_content %}
+<h2 class="page-title">Available Hotel Rooms</h2>
+
+<div class="room-list">
+  {% for room in rooms %}
+  <div class="room-card">
+    <img
+      src="{{ room.room_picture }}"
+      alt="{{ room.room_type }}"
+      class="room-image"
+    />
+    <div class="room-details">
+      <h3 class="room-title">{{ room.hotel_room_type }}</h3>
+      <p class="room-description">{{ room.description }}</p>
+      <p class="room-price"><strong>Price:</strong> ETB {{ room.room_rate }}</p>
+      <p class="room-capacity">
+        <strong>Capacity:</strong> {{ room.capacity }} Guests
+      </p>
+      <a
+        href="/hotel-room-reservation/new?hotel_room={{ room.name }}"
+        class="btn btn-primary"
+      >
+        Reserve Now
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

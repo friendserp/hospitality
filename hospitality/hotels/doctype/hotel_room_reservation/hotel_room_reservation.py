@@ -16,7 +16,7 @@ class HotelRoomPricingNotSetError(frappe.ValidationError): pass
 class HotelRoomReservation(Document):
 	def validate(self):
 		self.total_rooms = {}
-		self.set_rates()
+		# self.set_rates()
 		self.validate_availability()
 
 	def validate_availability(self):
@@ -109,3 +109,18 @@ def get_rooms_booked(room_type, day, exclude_reservation=None):
 			and %s between reservation.from_date
 				and reservation.to_date""".format(exclude_condition=exclude_condition),
 				(room_type, day))[0][0] or 0
+
+
+
+#updated by Samuael ketema
+
+
+@frappe.whitelist()
+def get_room_price(hotel_room):
+    """Get the price of the hotel room"""
+    try:
+        room = frappe.get_doc("Hotel Room", hotel_room)
+        return room.room_rate if room else None
+    except Exception as e:
+        frappe.log_error(f"Error fetching room rate for {hotel_room}: {e}")
+        return None

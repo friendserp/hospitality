@@ -9,13 +9,21 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "hotel_room",
+  "room_price",
   "guest_name",
+  "phone",
+  "email",
   "customer",
   "from_date",
   "to_date",
+  "total_days",
   "late_checkin",
   "column_break_6",
   "status",
+  "adult",
+  "children",
+  "attach_payment",
   "section_break_8",
   "items",
   "net_total",
@@ -32,6 +40,7 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Customer",
    "options": "Customer"
   },
@@ -51,13 +60,14 @@
    "default": "0",
    "fieldname": "late_checkin",
    "fieldtype": "Check",
-   "label": "Late Checkinn"
+   "label": "Late Checkin"
   },
   {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -72,8 +82,7 @@
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Items",
-   "options": "Hotel Room Reservation Item",
-   "reqd": 1
+   "options": "Hotel Room Reservation Item"
   },
   {
    "fieldname": "net_total",
@@ -88,14 +97,60 @@
    "options": "Hotel Room Reservation",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "hotel_room",
+   "fieldtype": "Link",
+   "label": "Hotel Room",
+   "options": "Hotel Room"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone",
+   "options": "+251-"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "adult",
+   "fieldtype": "Int",
+   "label": "Adult"
+  },
+  {
+   "fieldname": "children",
+   "fieldtype": "Int",
+   "label": "Children"
+  },
+  {
+   "fetch_from": "hotel_room.room_rate",
+   "fieldname": "room_price",
+   "fieldtype": "Float",
+   "label": "Room Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Int",
+   "label": "Total days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach_payment",
+   "fieldtype": "Attach Image",
+   "label": "Attach payment"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-26 20:37:20.614661",
+ "modified": "2025-03-17 22:53:37.747108",
  "modified_by": "Administrator",
  "module": "Hotels",
  "name": "Hotel Room Reservation",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -128,6 +183,7 @@
  ],
  "quick_entry": 1,
  "restrict_to_domain": "Hospitality",
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
